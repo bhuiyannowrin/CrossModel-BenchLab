@@ -67,6 +67,49 @@ st.markdown(
     "Publications | Challenge 06"
 )
 
+
+# Temporary dashboard diagnostics
+with st.sidebar.expander("Data Diagnostics", expanded=True):
+
+    st.write("Results folder:", str(RESULTS))
+    st.write("Folder exists:", RESULTS.exists())
+
+    required_files = [
+        "fold_results.csv",
+        "benchmark_summary.csv",
+        "fairness_audit_report.csv",
+        "violation_audit_details.csv",
+        "ranking_comparison.csv",
+        "paired_f1_differences.csv",
+        "fold_ranking_changes.csv",
+        "holdout_metrics.json"
+    ]
+
+    for filename in required_files:
+        path = RESULTS / filename
+
+        if path.is_file():
+            st.success(f"{filename}: FOUND")
+        else:
+            st.error(f"{filename}: MISSING")
+
+    st.write(
+        "Fold data loaded:",
+        folds is not None
+    )
+
+    if folds is not None:
+        st.write(
+            "Fold data columns:",
+            list(folds.columns)
+        )
+        st.write(
+            "Number of rows:",
+            len(folds)
+        )
+
+
+
 st.sidebar.title("Research Navigation")
 
 page = st.sidebar.radio(
