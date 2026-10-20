@@ -466,5 +466,5 @@ elif page == "Research Evidence":
 st.divider()
 st.caption(
     "CrossModel BenchLab | Team Coder Girls | "
-    "Research prototype — not a medical device"
+    "Research prototype"
 )
