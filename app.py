@@ -463,14 +463,6 @@ elif page == "Research Evidence":
 - Holdout results are not a clinical validation.
 """)
 
-    st.subheader("Development Attribution")
-    st.write(
-        "AI-assisted coding and documentation were "
-        "used during development. The team is "
-        "responsible for reviewing, testing and "
-        "explaining the submitted work."
-    )
-
 st.divider()
 st.caption(
     "CrossModel BenchLab | Team Coder Girls | "
