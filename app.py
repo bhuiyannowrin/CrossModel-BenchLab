@@ -30,12 +30,22 @@ h1, h2, h3 { letter-spacing: -0.02em; }
 """, unsafe_allow_html=True)
 
 
-@st.cache_data
+
 def load_csv(filename):
     path = RESULTS / filename
-    if not path.exists():
+
+    if not path.is_file():
+        st.error(f"Missing file: {path}")
         return None
-    return pd.read_csv(path)
+
+    try:
+        df = pd.read_csv(path)
+        return df
+
+    except Exception as e:
+        st.error(f"Cannot read {filename}: {e}")
+        return None
+
 
 
 @st.cache_data
