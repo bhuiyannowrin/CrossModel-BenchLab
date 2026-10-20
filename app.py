@@ -48,13 +48,24 @@ def load_csv(filename):
 
 
 
-@st.cache_data
+
 def load_json(filename):
     path = RESULTS / filename
-    if not path.exists():
+
+    if not path.is_file():
+        st.error(f"JSON file missing: {path}")
         return None
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        return data
+
+    except Exception as e:
+        st.error(f"JSON loading error: {e}")
+        return None
+
 
 
 folds = load_csv("fold_results.csv")
