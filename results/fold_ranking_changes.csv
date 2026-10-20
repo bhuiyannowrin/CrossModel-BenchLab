@@ -1,0 +1,11 @@
+scenario,fold,ranking_changed
+Unequal Tuning,1,False
+Unequal Tuning,2,False
+Unequal Tuning,3,True
+Unequal Tuning,4,False
+Unequal Tuning,5,True
+Preprocessing Leakage,1,False
+Preprocessing Leakage,2,False
+Preprocessing Leakage,3,False
+Preprocessing Leakage,4,True
+Preprocessing Leakage,5,False

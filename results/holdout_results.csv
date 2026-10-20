@@ -1,0 +1,2 @@
+selected_model,test_samples,accuracy,precision,recall,f1,roc_auc,final_training_seconds
+Logistic Regression,114,0.9736842105263158,0.9726027397260274,0.9861111111111112,0.9793103448275862,0.9957010582010581,0.4265333359999204

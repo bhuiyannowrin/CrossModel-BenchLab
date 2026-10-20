@@ -1,0 +1,76 @@
+scenario,fold,model,check,expected_violation,status,detected
+Controlled,1,SVM,Tuning Budget,False,PASS,False
+Controlled,1,SVM,Preprocessing,False,PASS,False
+Controlled,1,SVM,Random Seed,False,PASS,False
+Controlled,1,SVM,Inner Folds,False,PASS,False
+Controlled,1,SVM,Scoring Metric,False,PASS,False
+Controlled,2,SVM,Tuning Budget,False,PASS,False
+Controlled,2,SVM,Preprocessing,False,PASS,False
+Controlled,2,SVM,Random Seed,False,PASS,False
+Controlled,2,SVM,Inner Folds,False,PASS,False
+Controlled,2,SVM,Scoring Metric,False,PASS,False
+Controlled,3,SVM,Tuning Budget,False,PASS,False
+Controlled,3,SVM,Preprocessing,False,PASS,False
+Controlled,3,SVM,Random Seed,False,PASS,False
+Controlled,3,SVM,Inner Folds,False,PASS,False
+Controlled,3,SVM,Scoring Metric,False,PASS,False
+Controlled,4,SVM,Tuning Budget,False,PASS,False
+Controlled,4,SVM,Preprocessing,False,PASS,False
+Controlled,4,SVM,Random Seed,False,PASS,False
+Controlled,4,SVM,Inner Folds,False,PASS,False
+Controlled,4,SVM,Scoring Metric,False,PASS,False
+Controlled,5,SVM,Tuning Budget,False,PASS,False
+Controlled,5,SVM,Preprocessing,False,PASS,False
+Controlled,5,SVM,Random Seed,False,PASS,False
+Controlled,5,SVM,Inner Folds,False,PASS,False
+Controlled,5,SVM,Scoring Metric,False,PASS,False
+Unequal Tuning,1,SVM,Tuning Budget,True,FLAGGED,True
+Unequal Tuning,1,SVM,Preprocessing,False,PASS,False
+Unequal Tuning,1,SVM,Random Seed,False,PASS,False
+Unequal Tuning,1,SVM,Inner Folds,False,PASS,False
+Unequal Tuning,1,SVM,Scoring Metric,False,PASS,False
+Unequal Tuning,2,SVM,Tuning Budget,True,FLAGGED,True
+Unequal Tuning,2,SVM,Preprocessing,False,PASS,False
+Unequal Tuning,2,SVM,Random Seed,False,PASS,False
+Unequal Tuning,2,SVM,Inner Folds,False,PASS,False
+Unequal Tuning,2,SVM,Scoring Metric,False,PASS,False
+Unequal Tuning,3,SVM,Tuning Budget,True,FLAGGED,True
+Unequal Tuning,3,SVM,Preprocessing,False,PASS,False
+Unequal Tuning,3,SVM,Random Seed,False,PASS,False
+Unequal Tuning,3,SVM,Inner Folds,False,PASS,False
+Unequal Tuning,3,SVM,Scoring Metric,False,PASS,False
+Unequal Tuning,4,SVM,Tuning Budget,True,FLAGGED,True
+Unequal Tuning,4,SVM,Preprocessing,False,PASS,False
+Unequal Tuning,4,SVM,Random Seed,False,PASS,False
+Unequal Tuning,4,SVM,Inner Folds,False,PASS,False
+Unequal Tuning,4,SVM,Scoring Metric,False,PASS,False
+Unequal Tuning,5,SVM,Tuning Budget,True,FLAGGED,True
+Unequal Tuning,5,SVM,Preprocessing,False,PASS,False
+Unequal Tuning,5,SVM,Random Seed,False,PASS,False
+Unequal Tuning,5,SVM,Inner Folds,False,PASS,False
+Unequal Tuning,5,SVM,Scoring Metric,False,PASS,False
+Preprocessing Leakage,1,SVM,Tuning Budget,False,PASS,False
+Preprocessing Leakage,1,SVM,Preprocessing,True,FLAGGED,True
+Preprocessing Leakage,1,SVM,Random Seed,False,PASS,False
+Preprocessing Leakage,1,SVM,Inner Folds,False,PASS,False
+Preprocessing Leakage,1,SVM,Scoring Metric,False,PASS,False
+Preprocessing Leakage,2,SVM,Tuning Budget,False,PASS,False
+Preprocessing Leakage,2,SVM,Preprocessing,True,FLAGGED,True
+Preprocessing Leakage,2,SVM,Random Seed,False,PASS,False
+Preprocessing Leakage,2,SVM,Inner Folds,False,PASS,False
+Preprocessing Leakage,2,SVM,Scoring Metric,False,PASS,False
+Preprocessing Leakage,3,SVM,Tuning Budget,False,PASS,False
+Preprocessing Leakage,3,SVM,Preprocessing,True,FLAGGED,True
+Preprocessing Leakage,3,SVM,Random Seed,False,PASS,False
+Preprocessing Leakage,3,SVM,Inner Folds,False,PASS,False
+Preprocessing Leakage,3,SVM,Scoring Metric,False,PASS,False
+Preprocessing Leakage,4,SVM,Tuning Budget,False,PASS,False
+Preprocessing Leakage,4,SVM,Preprocessing,True,FLAGGED,True
+Preprocessing Leakage,4,SVM,Random Seed,False,PASS,False
+Preprocessing Leakage,4,SVM,Inner Folds,False,PASS,False
+Preprocessing Leakage,4,SVM,Scoring Metric,False,PASS,False
+Preprocessing Leakage,5,SVM,Tuning Budget,False,PASS,False
+Preprocessing Leakage,5,SVM,Preprocessing,True,FLAGGED,True
+Preprocessing Leakage,5,SVM,Random Seed,False,PASS,False
+Preprocessing Leakage,5,SVM,Inner Folds,False,PASS,False
+Preprocessing Leakage,5,SVM,Scoring Metric,False,PASS,False
